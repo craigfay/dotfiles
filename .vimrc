@@ -2,13 +2,16 @@
 syntax enable
 
 "Colors"
-colorscheme inkpot
+colorscheme zellner
+set background=light
 
 "Enable Line Numbers"
 set number
 
+"Disable generation of .swp files"
+set noswapfile
 
-"-------Key Mappings---------"
+"Key Mappings
 "Change the default leader key to ,"
 let mapleader = ','
 
@@ -16,7 +19,7 @@ let mapleader = ','
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 
 
-"-------Auto Commands--------"
+"Auto Commands
 "Automatically source the vimrc file on save. The group keeps vim from sourcing recursively."
 augroup autosourcing
 	autocmd!
@@ -24,18 +27,18 @@ augroup autosourcing
 augroup END
 
 
-"----------Search------------"
+"Search
 "Use incremental search"
 set incsearch
 
 
-"-------Split Management-----"
+"Split Management
 "Always have splits be below and right
 set splitbelow
 set splitright
 
 
-"------- Tabs -----"
+"Tabs
 filetype plugin indent on
 
 "show existing tab with 4 spaces width
@@ -45,6 +48,7 @@ set tabstop=4
 autocmd Filetype ts setlocal shiftwidth=2
 autocmd Filetype js setlocal shiftwidth=2
 autocmd Filetype rs setlocal shiftwidth=4
+autocmd Filetype py setlocal shiftwidth=4
 
 "when indenting with '>', use 4 spaces width
 set shiftwidth=4
@@ -55,3 +59,6 @@ set expandtab
 "Auto indent
 set noautoindent
 
+"Show Whitespace
+set list
+set listchars=tab:›\ ,eol:¬,trail:⋅
