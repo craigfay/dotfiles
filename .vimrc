@@ -4,8 +4,8 @@ syntax enable
 "Color Scheme
 colo dogrun 
 
-"Set file explorer split size
-let g:netrw_winsize=30
+"Set file explorer split size, useful for :Lex
+"let g:netrw_winsize=30"
 
 "Enable Line Numbers"
 set number
