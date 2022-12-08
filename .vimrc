@@ -1,10 +1,12 @@
 "Enable Syntax Highlighting
 syntax enable
 
-"Colors"
-colorscheme zellner
-set background=light
+"Color Scheme
+colo dogrun 
 
+"Set file explorer split size
+let g:netrw_winsize=30
+"
 "Enable Line Numbers"
 set number
 
@@ -45,10 +47,11 @@ filetype plugin indent on
 set tabstop=4
 
 "file specific tabsizes
-autocmd Filetype ts setlocal shiftwidth=2
-autocmd Filetype js setlocal shiftwidth=2
-autocmd Filetype rs setlocal shiftwidth=4
-autocmd Filetype py setlocal shiftwidth=4
+autocmd Filetype ts setlocal shiftwidth=2 tabstop=2
+autocmd Filetype js setlocal shiftwidth=2 tabstop=2
+autocmd Filetype test.js setlocal shiftwidth=2 tabstop=2
+autocmd Filetype rs setlocal shiftwidth=4 tabstop=4
+autocmd Filetype py setlocal shiftwidth=4 tabstop=4
 
 "when indenting with '>', use 4 spaces width
 set shiftwidth=4
@@ -57,8 +60,11 @@ set shiftwidth=4
 set expandtab
 
 "Auto indent
-set noautoindent
+set autoindent
 
 "Show Whitespace
 set list
 set listchars=tab:›\ ,eol:¬,trail:⋅
+
+"Automatically change directories when opening files
+set autochdir
