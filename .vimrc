@@ -6,7 +6,7 @@ colo dogrun
 
 "Set file explorer split size
 let g:netrw_winsize=30
-"
+
 "Enable Line Numbers"
 set number
 
