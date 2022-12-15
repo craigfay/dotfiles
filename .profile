@@ -9,3 +9,6 @@ export NVM_DIR="$HOME/.nvm"
 # Python Interpreter
 export PATH="$PATH:/Users/craigfay/Library/Python/3.8/bin"
 
+# Aliases
+alias "git_hash"="git rev-parse --verify --short HEAD"
+
