@@ -68,3 +68,11 @@ set listchars=tab:›\ ,eol:¬,trail:⋅
 
 "Automatically change directories when opening files
 set autochdir
+
+" Vim Tips
+" - Use <.> in normal mode to repeat the last command
+" - Use <g><g><=><G> in normal mode to reformat the entire file
+" - Use :vimgrep 'pattern' filepath to search the codebase, and :cn, :cp,
+"   :cnf, :cnp to jump between matches. Use :cr to return to the first match.
+" - After selecting in visual mode, use <"><*><p> to copy to the system
+"   clipboard
