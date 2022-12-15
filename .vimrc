@@ -76,3 +76,14 @@ set autochdir
 "   :cnf, :cnp to jump between matches. Use :cr to return to the first match.
 " - After selecting in visual mode, use <"><*><y> to copy to the system
 "   clipboard
+" - use :b <tab> to cycle through all open (buffered) files
+" - use <ctrl> <n> to autocomplete. Hold <ctrl> and use <n> and <p> to scroll
+" - use <ctrl><x><f> to autocomplete filenames
+" - use <i> in netrw to toggle list style
+" - use <I> in netrw to hide banner
+" - use :only to close all other splits except the current
+" - use <t> from netrw to open a file in a new tab
+" - use <g><t> and <g><T> to cycle through tabs
+" - use <1><g><t> to go to the first tab
+" - use <g><f> to open the file whose name you're hovering over
+" - use :b# to open the previous buffer
