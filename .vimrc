@@ -46,15 +46,15 @@ filetype plugin indent on
 "show existing tab with 4 spaces width
 set tabstop=4
 
+"when indenting with '>', use 4 spaces width
+set shiftwidth=4
+
 "file specific tabsizes
 autocmd Filetype ts setlocal shiftwidth=2 tabstop=2
 autocmd Filetype js setlocal shiftwidth=2 tabstop=2
 autocmd Filetype test.js setlocal shiftwidth=2 tabstop=2
 autocmd Filetype rs setlocal shiftwidth=4 tabstop=4
 autocmd Filetype py setlocal shiftwidth=4 tabstop=4
-
-"when indenting with '>', use 4 spaces width
-set shiftwidth=4
 
 "On pressing tab, insert spaces
 set expandtab
