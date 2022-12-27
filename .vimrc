@@ -1,6 +1,9 @@
 "Enable Syntax Highlighting
 syntax enable
 
+"Enable Nested Syntax Highlighting in Markdown Files
+let g:markdown_fenced_languages = ['html', 'python', 'js', 'rust']
+
 "Color Scheme
 colo dogrun 
 
