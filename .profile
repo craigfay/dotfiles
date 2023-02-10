@@ -1,6 +1,6 @@
 
 # Cargo / Rust
-. "$HOME/.cargo/env"
+[ -d "/.cargo" ] && . "$HOME/.cargo/env"
 
 # Node Version Manager
 export NVM_DIR="$HOME/.nvm"
@@ -23,5 +23,5 @@ alias gr="git reset"
 alias gs="git status"
 alias gc="git commit"
 alias gp="git push"
-alias gpu="git push --set-upstream origin $(git branch --show-current)"
 alias gh="git rev-parse --verify --short HEAD"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
